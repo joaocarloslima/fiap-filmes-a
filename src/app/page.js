@@ -7,8 +7,8 @@ export default function Home() {
         <h1 className="text-3xl font-bold">Fiap Filmes</h1>
       </nav>
 
-      <Titulo texto="em alta" />
-      <Titulo texto="lançamentos" />
+      <Titulo>em alta</Titulo>
+      <Titulo>lançamentos</Titulo>
 
     </>
   )
