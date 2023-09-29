@@ -1,4 +1,5 @@
 import CardFilme from "@/components/CardFilme";
+import NavBar from "@/components/NavBar";
 import Titulo from "@/components/Titulo";
 
 async function carregarDados(){
@@ -19,14 +20,10 @@ async function carregarDados(){
 export default async function Favoritos() {
   
   const filmes = await carregarDados() 
-  console.log(filmes)
 
   return (
     <>
-      <nav className="flex items-end gap-4 bg-slate-900 p-4">
-        <h1 className="text-3xl font-bold">Fiap Filmes</h1>
-        <a href="/favoritos">favoritos</a>
-      </nav>
+      <NavBar />
 
       <Titulo>Favoritos</Titulo>
 
